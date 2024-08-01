@@ -1,0 +1,167 @@
+.App {
+  position: relative;
+  border-top: 55px solid rgb(136, 130, 130); /* Top border 40px */
+  border-right: 10px solid rgb(136, 130, 130); /* Right border 10px */
+  border-bottom: 45px solid rgb(136, 130, 130); /* Bottom border 10px */
+  border-left: 10px solid rgb(136, 130, 130); /* Left border 10px */
+}
+.App::before {
+  position: absolute;
+  top: -55px; /* Adjust based on border width */
+  left: 10%;
+  transform: translateX(-10%);
+  color: white;
+  background-color: rgb(136, 130, 130);
+  padding: 5px;
+  z-index: 1;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  position: relative;
+  border-top: 55px solid rgb(136, 130, 130); /* Top border 40px */
+  border-right: 10px solid rgb(136, 130, 130); /* Right border 10px */
+  border-bottom: 20px solid rgb(136, 130, 130); /* Bottom border 10px */
+  border-left: 10px solid rgb(136, 130, 130); /* Left border 10px */
+}
+.App-logo::before {
+  content: "Logo Text";
+  position: absolute;
+  top: -55px; /* Adjust based on border width */
+  left: 10%;
+  transform: translateX(-10%);
+  color: white;
+  background-color: rgb(136, 130, 130);
+  padding: 5px;
+  z-index: 1;
+}
+.App-header {
+  background-color: rgb(212, 196, 179);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  position: relative;
+  border-top: 55px solid rgb(136, 130, 130); /* Top border 40px */
+  border-right: 10px solid rgb(136, 130, 130); /* Right border 10px */
+  border-bottom: 0px solid rgb(136, 130, 130); /* Bottom border 10px */
+  border-left: 10px solid rgb(136, 130, 130); /* Left border 10px */
+  padding-top: 0.1px;
+  padding-left: 80px;
+}
+.App-header::before {
+  content: "Login page";
+  font-size: 50px;
+  position: absolute;
+  top: -79px; /* Adjust based on border width */
+  left: 1.5%;
+  transform: translateX(-10%);
+  color: black;
+  background-color: rgb(136, 130, 130);
+  padding: 5px;
+}
+.App-link {
+  color: #61dafb;
+  position: relative;
+  border-top: 55px solid white; /* Top border 40px */
+  border-right: 10px solid white; /* Right border 10px */
+  border-bottom: 20px solid white; /* Bottom border 10px */
+  border-left: 10px solid white; /* Left border 10px */
+}
+.App-link::before {
+  position: absolute;
+  top: -55px; /* Adjust based on border width */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: white;
+  padding: 5px;
+  z-index: 1;
+}
+.space-bottom {
+  margin-bottom: 2px; /* Adjust the margin as needed */
+}
+.space-bottom1{
+  margin-bottom: 30px; /* Adjust the margin as needed */
+  padding-left:540px;
+}
+.plant-image {
+  width: 100%; /* Make the image take the full width of its container */
+  height: 300px; /* Maintain the aspect ratio of the image */
+  max-width: 900px; /* Set a maximum width if needed */
+  margin-right: 20px; /* Space between image and text */
+  padding-right: 200px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr)); /* Increase the size of the columns */
+  padding: 2px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-left: 300px;
+  margin-bottom: 10px;
+}
+.product-item {
+  border: 3px solid rgb(185, 145, 150);
+  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  background-color: rgba(88, 33, 33, 0.233);
+}
+.product-item1 {
+  border: 3px solid rgb(185, 145, 150);
+  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px; /* Adjust the spacing as needed */
+  margin-left: 2px;
+  padding-left:0.1px;
+}
+.input-group label {
+  margin-bottom: 1px; /* Space between label and input */
+}
+.wide-input {
+  width: 90%; /* Adjust the width as needed */
+  max-width: 250px;
+  height: 10px; /* Adjust the height as needed */
+  padding: 10px; 
+  background-color: rgb(194, 181, 181);
+} 
+.button {
+  background-color: rgb(185, 145, 150); /* Button background color */
+  color: white; /* Button text color */
+  padding: 8px 20px; /* Button padding */
+  padding-left: 20px;
+  border: none; /* Remove border */
+  border-radius: 20px; /* Oval shape */
+  text-align:center; /* Center text */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: inline-block; /* Inline block display */
+  margin-top: 7px; /* Space above the button */
+  margin-left: 0.1px;
+}
+
+.button:hover {
+  background-color: rgb(185, 145, 150); /* Darker green on hover */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

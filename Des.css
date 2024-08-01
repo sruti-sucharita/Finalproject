@@ -1,0 +1,151 @@
+.App {
+  position: relative;
+  border-top: 55px solid rgb(136, 130, 130); /* Top border 40px */
+  border-right: 10px solid rgb(136, 130, 130); /* Right border 10px */
+  border-bottom: 20px solid rgb(136, 130, 130); /* Bottom border 10px */
+  border-left: 10px solid rgb(136, 130, 130); /* Left border 10px */
+}
+
+.App::before {
+  position: absolute;
+  top: -55px; /* Adjust based on border width */
+  left: 10%;
+  transform: translateX(-10%);
+  color: white;
+  background-color: rgb(136, 130, 130);
+  padding: 5px;
+  z-index: 1;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  position: relative;
+  border-top: 55px solid rgb(136, 130, 130); /* Top border 40px */
+  border-right: 10px solid rgb(136, 130, 130); /* Right border 10px */
+  border-bottom: 20px solid rgb(136, 130, 130); /* Bottom border 10px */
+  border-left: 10px solid rgb(136, 130, 130); /* Left border 10px */
+}
+
+.App-logo::before {
+  content: "Logo Text";
+  position: absolute;
+  top: -55px; /* Adjust based on border width */
+  left: 10%;
+  transform: translateX(-10%);
+  color: white;
+  background-color: rgb(136, 130, 130);
+  padding: 5px;
+  z-index: 1;
+}
+
+.App-header {
+  background-color: rgb(253, 248, 230);
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between; /* Space between text and image */
+  font-size: calc(10px + 2vmin);
+  color: black;
+  position: relative;
+  border-top: 55px solid rgb(136, 130, 130); /* Top border 40px */
+  border-right: 10px solid rgb(136, 130, 130); /* Right border 10px */
+  border-bottom: 20px solid rgb(136, 130, 130); /* Bottom border 10px */
+  border-left: 10px solid rgb(136, 130, 130); /* Left border 10px */
+  padding: 20px;
+}
+
+.App-header::before {
+  content: "Description page";
+  font-size: 50px;
+  position: absolute;
+  top: -79px; /* Adjust based on border width */
+  left: 1.5%;
+  transform: translateX(-7.5%);
+  color: black;
+  background-color: rgb(136, 130, 130);
+  padding: 5px;
+}
+
+.App-link {
+  color: #61dafb;
+  position: relative;
+  border-top: 55px solid white; /* Top border 40px */
+  border-right: 10px solid white; /* Right border 10px */
+  border-bottom: 20px solid white; /* Bottom border 10px */
+  border-left: 10px solid white; /* Left border 10px */
+}
+
+.App-link::before {
+  position: absolute;
+  top: -55px; /* Adjust based on border width */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: white;
+  padding: 5px;
+  z-index: 1;
+}
+
+.space-bottom {
+  margin-bottom: 40px; /* Adjust the margin as needed */
+}
+
+.space-bottom1 {
+  margin-bottom: 50px; /* Adjust the margin as needed */
+}
+
+.space-bottom2 {
+  margin-bottom: 15px; /* Adjust the margin as needed */
+}
+
+.center-text {
+  text-align: center; /* Center the text */
+  width: 100%; /* Ensure it takes full width */
+}
+
+.plant-image2 {
+  width: 440px; /* Adjust the size as needed */
+  height: 400px;
+  margin-left: 80px; /* Space between text and image */
+  margin-top: 200px;
+  margin-right: 40px;
+}
+
+.left-align {
+  align-items: flex-start; /* Align text to the left */
+  text-align: left; /* Ensure text is aligned to the left */
+  width: 80%; /* Ensure it takes full width */
+  margin-left: 40px;
+}
+
+.thick-hr {
+  height: 2px; /* Adjust the thickness as needed */
+  background-color: black; /* Change the color if needed */
+  border: none; /* Remove the default border */
+}
+
+.short-right-hr {
+  width: 90%; /* Adjust the length as needed */
+  margin-left: 0;
+  /* Align the line to the right */
+}
+
+.indent-text {
+  display: inline;
+  margin-left: 88px; /* Adjust the indentation as needed */
+}
+
+.indent-text1 {
+  display: inline;
+  margin-left: 120px; /* Adjust the indentation as needed */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
